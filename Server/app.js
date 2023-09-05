@@ -14,9 +14,9 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 //Route Imports
-const certificate = require("./routes/certificateRoute");
-const user = require("./routes/userRoute");
-const organisation = require("./routes/organisationRoute");
+const certificate = require("./routes/certificatesRoutes");
+const user = require("./routes/usesrRoutes");
+const organisation = require("./routes/organisationsRoutes");
 app.use("/api/v1", certificate);
 app.use("/api/v1", user);
 app.use("/api/v1", organisation);
